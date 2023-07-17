@@ -24,7 +24,7 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
 
     if (isDev) {
         plugins.push(new webpack.HotModuleReplacementPlugin());
-        plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
+        plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false, analyzerPort: 8888 }));
         plugins.push(new ReactRefreshWebpackPlugin());
     }
 

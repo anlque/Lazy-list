@@ -1,4 +1,3 @@
-import { Button } from 'shared/ui/Button/Button';
 import cls from './PageError.module.scss';
 
 export const PageError = () => {
@@ -10,9 +9,9 @@ export const PageError = () => {
     return (
         <div className={cls.PageError}>
             page_error
-            <Button onClick={reloadPage}>
+            <button type="button" onClick={reloadPage}>
                 reload_page
-            </Button>
+            </button>
         </div>
     );
 };
